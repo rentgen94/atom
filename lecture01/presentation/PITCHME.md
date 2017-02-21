@@ -176,19 +176,6 @@ path
 
 3. set 'JAVA_HOME' environment variable
 
-#HSLIDE 
-# javac & java
-**javac** - java compiler
-
-Compile program
-```
-> javac HelloWorld.java
-```
-
-Run program
-```
-> java HelloWorld.class
-```
 
 #HSLIDE 
 # Hello, World!
@@ -200,6 +187,20 @@ public class HelloWorld {
         System.out.println("Hello, World!");
     }
 }
+```
+
+#HSLIDE 
+# compile and run
+**javac** - java compiler
+
+Compile program
+```
+> javac HelloWorld.java
+```
+
+Run program
+```
+> java HelloWorld.class
 ```
 
 #HSLIDE 
