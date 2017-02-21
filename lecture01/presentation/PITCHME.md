@@ -171,9 +171,6 @@ JVM + Lang + Libs
 1. Download [**JDK8**](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
 
 2. set **path** and **JAVA_HOME** environment variables
-**path** is list of places where system searches for binaries
-**JAVA_HOME** points to the root of JDK
-
 **Linux:**
 ```bash
 > echo "PATH='/path/to/jdk8/bin:$PATH'" >> ~/.bashrc
@@ -181,7 +178,6 @@ JVM + Lang + Libs
 > source ~/.bashrc
 > echo $PATH
 ```
-
 **macOS:** (possibly sudo)
 ```bash
 > echo "PATH='/path/to/jdk8/bin:$PATH'" >> /etc/profile
