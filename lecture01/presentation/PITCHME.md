@@ -351,6 +351,21 @@ Method body ```			{ … }```
 5. Git  
 6. Homework 1  
 
+#HSLIDE
+# Gradle
+https://gradle.org/
+build automation system  
+like maven but more powerful  
+do not need installation
+just use
+```
+gradlew.bat
+```
+#HSLIDE
+# Gradle workflow
+https://guides.gradle.org/creating-java-applications/
+
+
 #HSLIDE 
 # 5. Git 
 1. Course structure  
@@ -359,6 +374,52 @@ Method body ```			{ … }```
 4. Gradle  
 5. **[Git]**  
 6. Homework 1  
+
+#HSLIDE 
+# Git
+1. Install git
+https://git-scm.com/
+
+#HSLIDE
+#Fork repository and set upstream
+https://help.github.com/articles/fork-a-repo/
+1. Форкните репозиторий - в ваших проектах на github появится копия репозитория
+```
+git clone https://github.com/YOUR_USERNAME/YOUR_FORK.git
+```
+2. Настроим синхронизацию репозитория, чтобы вы работали со свежей версией кода
+```
+> cd atom
+> git remote add upstream https://github.com/rybalkinsd/atom.git
+```
+3. Проверим, что синхронизация включена (интересны 2 последние строки)
+```
+git remote -v
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+upstream https://github.com/rybalkinsd/atom.git (fetch)
+upstream https://github.com/rybalkinsd/atom.git (push)
+```
+
+#HSLIDE
+#Basic git
+Посмотреть текущую ветку
+```
+> git branc
+master
+```
+```
+> git checkout lecture1
+```
+```
+> git add changed_file
+```
+```
+> git commit -m 'Сообщение с пояснением коммита'
+```
+```
+> git push - послать изменения в удаленный (публичный) репозиторий
+```
 
 #HSLIDE 
 # 6. Homework 1 
