@@ -131,13 +131,14 @@ https://atom.mail.ru/
 
 #HSLIDE
 ## Why Java?
-### About java
 - Java is **mature** (20+ years) => stable and conservative
 - Java has active community (in Russia too)
 - Java has rich choice of libraries and frameworks
 - *Java is fast*  
+- Java market is not saturated, **$$**
 
-### Technical side
+#HSLIDE
+## Common Java facts
 - Java is **crossplatform** - 'Write Once, Run Anywhere' **(WORA)**
 - Java is **object-oriented**, **class-based**
 - Java is compiled to **Byte Code** (not to machine codes), which is executed by **Java Virtual Machine (JVM)**
@@ -205,7 +206,7 @@ public class HelloWorld {
 ```
 1. public static void main(String[] args) is an entry point
 2. All executable code must inside classes
-3. public class Name must match file name
+3. public class name must match file name
 4. System.out.println("Hello, World!"); - is a standard way to print to console
 5. Every statement must end with semicolon
 
