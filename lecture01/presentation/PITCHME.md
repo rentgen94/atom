@@ -180,12 +180,14 @@ path
 # javac & java
 **javac** - java compiler
 
-source code ===[javac]==> byte-code (.class)
-
+Compile program
 ```
-javac HelloWorld.java
-java HelloWorld.class
+> javac HelloWorld.java
+```
 
+Run program
+```
+> java HelloWorld.class
 ```
 
 #HSLIDE 
