@@ -75,13 +75,13 @@ https://atom.mail.ru/
 [http://docs.oracle.com/javase/8/docs/api/](http://docs.oracle.com/javase/8/docs/api/)
 
 #HSLIDE
-## План курса
-1. Intro - познаем основы языка, знакомимся с инструментарием
-2. Java WEB - учимся писать web-сервисы
-3. Persisnence - работаем с базами данных
-4. Client-server interaction - общаемся по сети
-5. Game mechanics - строим игру
-6. Final project - защищаем групповой проект
+# План курса
+1. **Intro** - познаем основы языка, знакомимся с инструментарием
+2. **Java WEB** - учимся писать web-сервисы
+3. **Persisnence** - работаем с базами данных
+4. **Client-server interaction** - общаемся по сети
+5. **Game mechanics** - строим игру
+6. **Final project** - защищаем групповой проект
 
 #HSLIDE
 # Оценка
@@ -92,7 +92,7 @@ https://atom.mail.ru/
 - \+ есть возможность получать дополнительные баллы за задания, которые мы даем прямо на семинарах  
 
 **Сертификат:**  
-набрать 50 баллов и защитить проект
+нужно набрать 50 баллов и защитить проект
 
 **Оценки:**  
 **3**: 50-69  
@@ -122,7 +122,8 @@ https://atom.mail.ru/
 ### Java dominates areas:
 - Back-end for enterprise-scale solutions
 - Android (specific area)  
-  
+
+
 ### Where Java mostly does not work?
 - Low level high performance software
 - soft for specific hardware
@@ -137,7 +138,7 @@ https://atom.mail.ru/
 - *Java is fast*  
 
 ### Technical side
-- Java is crossplatform - 'Write Once, Run Anywhere' **(WORA)**
+- Java is **crossplatform** - 'Write Once, Run Anywhere' **(WORA)**
 - Java is **object-oriented**, **class-based**
 - Java is compiled to **Byte Code** (not to machine codes), which is executed by **Java Virtual Machine (JVM)**
 - static strong safe typisation
@@ -187,14 +188,14 @@ JVM + Lang + Libs
 > echo $PATH
 ```
 
-**Windows** [только через настройки системы](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html) :(
+**Windows**  
+[только через настройки системы](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html) :(  
 \+ Перезапустите консоль
 
 
 #HSLIDE 
 # Hello, World!
-HelloWorld.java
-(file name must match public class inside file)
+**HelloWorld.java**
 ```java
 public class HelloWorld {
     public static void main(String[] args) {
@@ -202,6 +203,11 @@ public class HelloWorld {
     }
 }
 ```
+1. public static void main(String[] args) is an entry point
+2. All executable code must inside classes
+3. public class Name must match file name
+4. System.out.println("Hello, World!"); - is a standard way to print to console
+5. Every statement must end with semicolon
 
 #HSLIDE 
 # compile and run
