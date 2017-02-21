@@ -190,8 +190,7 @@ JVM + Lang + Libs
 ```
 
 **Windows:**  
-[только через настройки системы](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html) :(  
-\+ Перезапустите консоль
+[только через настройки системы](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html) :( \+ Перезапустите консоль
 
 
 #HSLIDE 
@@ -208,7 +207,7 @@ public class HelloWorld {
 2. All executable code must inside **classes**
 3. public class name **must** match file name
 4. ```System.out.println("Hello, World!");``` - is a standard way to print to console
-5. Every statement must end with **semicolon**
+5. Every statement must end with **;**
 
 #HSLIDE 
 # compile and run
