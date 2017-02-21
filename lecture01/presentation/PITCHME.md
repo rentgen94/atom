@@ -367,7 +367,8 @@ gradlew.bat
 #HSLIDE
 # Gradle workflow
 https://guides.gradle.org/creating-java-applications/
-
+gradle assemble
+gradle check
 
 #HSLIDE 
 # 5. Git 
@@ -385,7 +386,6 @@ https://git-scm.com/
 
 #HSLIDE
 ## Fork repository and set upstream
-https://help.github.com/articles/fork-a-repo/
 1. Форкните репозиторий - в вашем github появится копия репозитория
 ```
 git clone https://github.com/YOUR_USERNAME/YOUR_FORK.git
@@ -429,19 +429,19 @@ master
 ```
 
 #HSLIDE
-# Travis
-Continuous Integration Tool
-[https://travis-ci.org/](https://travis-ci.org/)
-When you push to repository - gradle automatically run
-
+# Travis  
+Continuous Integration Tool  
+[https://travis-ci.org/](https://travis-ci.org/)  
+When you push to repository - travis automatically runs on his server
 ```
 > ./gradlew assemble
-```
-```
-./gradlew check
+> ./gradlew check
 ```
 So it does for all branches and pull requests
 [https://travis-ci.org/rybalkinsd/atom/pull_requests](https://travis-ci.org/rybalkinsd/atom/pull_requests)
+
+#HSLIDE
+Branch
 
 #HSLIDE 
 # 6. Homework 1 
@@ -454,7 +454,7 @@ So it does for all branches and pull requests
 
 #HSLIDE
 # Homework 1
-
+4 balls
 
 #HSLIDE
-# Оставьте обратную связь в анкете для обратной связи. Это важно!
+## Оставьте обратную связь в анкете для обратной связи. Это важно!
