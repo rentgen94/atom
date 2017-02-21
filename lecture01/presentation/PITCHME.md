@@ -136,7 +136,7 @@ https://atom.mail.ru/
 - *Java is fast*  
 
 ### Technical side
-- Java is crossplatform - 'Write Once, Run Anywhere' (WORA)
+- Java is crossplatform - 'Write Once, Run Anywhere' **(WORA)**
 - Java is **object-oriented**, **class-based**
 - Java is compiled to **Byte Code** (not to machine codes), which is executed by **Java Virtual Machine (JVM)**
 - static strong safe typisation
@@ -167,18 +167,14 @@ JVM + Lang + Libs
 <img src="lecture01/presentation/assets/img/codeflow.png" alt="me" style="width: 750px; float: left;"/>  
 
 #HSLIDE 
-# Basic setup
-1. Download JDK
-**JDK8**  
-[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
-path
+## Basic setup
+1. Download [**JDK8**](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
 
 2. set **path** and **JAVA_HOME** environment variables
 **path** is list of places where system searches for binaries
 **JAVA_HOME** points to the root of JDK
 
-**Linux**
-edit
+**Linux:**
 ```bash
 > echo "PATH='/path/to/jdk8/bin:$PATH'" >> ~/.bashrc
 > echo "JAVA_HOME='/path/to/jdk8/'" >> ~/.bashrc
@@ -186,7 +182,7 @@ edit
 > echo $PATH
 ```
 
-**macOS** (possibly sudo)
+**macOS:** (possibly sudo)
 ```bash
 > echo "PATH='/path/to/jdk8/bin:$PATH'" >> /etc/profile
 > echo "JAVA_HOME='/path/to/jdk8/'" >> /etc/profile
