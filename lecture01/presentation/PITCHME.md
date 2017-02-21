@@ -381,7 +381,7 @@ https://guides.gradle.org/creating-java-applications/
 https://git-scm.com/
 
 #HSLIDE
-#Fork repository and set upstream
+## Fork repository and set upstream
 https://help.github.com/articles/fork-a-repo/
 1. Форкните репозиторий - в ваших проектах на github появится копия репозитория
 ```
@@ -405,20 +405,24 @@ upstream https://github.com/rybalkinsd/atom.git (push)
 #Basic git
 Посмотреть текущую ветку
 ```
-> git branc
+> git branch
 master
 ```
+выбрать ветку lecture1
 ```
 > git checkout lecture1
 ```
+добавить файл к будущему коммиту
 ```
 > git add changed_file
 ```
+зафиксировать изменения в локальном репозитории
 ```
 > git commit -m 'Сообщение с пояснением коммита'
 ```
+послать изменения в удаленный (публичный) репозиторий
 ```
-> git push - послать изменения в удаленный (публичный) репозиторий
+> git push
 ```
 
 #HSLIDE 
@@ -429,6 +433,9 @@ master
 4. Gradle  
 5. Git  
 6. **[Homework 1]**  
+
+#HSLIDE
+
 
 #HSLIDE
 # Оставьте обратную связь в анкете для обратной связи. Это важно!
