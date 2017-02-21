@@ -386,7 +386,7 @@ https://git-scm.com/
 #HSLIDE
 ## Fork repository and set upstream
 https://help.github.com/articles/fork-a-repo/
-1. Форкните репозиторий - в ваших проектах на github появится копия репозитория
+1. Форкните репозиторий - в вашем github появится копия репозитория
 ```
 git clone https://github.com/YOUR_USERNAME/YOUR_FORK.git
 ```
@@ -405,7 +405,7 @@ upstream https://github.com/rybalkinsd/atom.git (push)
 ```
 
 #HSLIDE
-#Basic git
+## Basic git
 Посмотреть текущую ветку
 ```
 > git branch
@@ -428,6 +428,21 @@ master
 > git push
 ```
 
+#HSLIDE
+# Travis
+Continuous Integration Tool
+[https://travis-ci.org/](https://travis-ci.org/)
+When you push to repository - gradle automatically run
+
+```
+> ./gradlew assemble
+```
+```
+./gradlew check
+```
+So it does for all branches and pull requests
+[https://travis-ci.org/rybalkinsd/atom/pull_requests](https://travis-ci.org/rybalkinsd/atom/pull_requests)
+
 #HSLIDE 
 # 6. Homework 1 
 1. Course structure  
@@ -438,6 +453,7 @@ master
 6. **[Homework 1]**  
 
 #HSLIDE
+# Homework 1
 
 
 #HSLIDE
