@@ -143,7 +143,7 @@ https://atom.mail.ru/
 - Java is **object-oriented**, **class-based**
 - Java is compiled to **Byte Code** (not to machine codes), which is executed by **Java Virtual Machine (JVM)**
 - static strong safe typisation
-- automatic memory management (GC)
+- automatic memory management **(GC)**
 - concurrent
 
 #HSLIDE
@@ -173,7 +173,7 @@ JVM + Lang + Libs
 ## Basic setup
 1. Download [**JDK8**](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
 
-2. set **path** and **JAVA_HOME** environment variables
+2. set **path** and **JAVA_HOME** environment variables  
 **Linux:**
 ```bash
 > echo "PATH='/path/to/jdk8/bin:$PATH'" >> ~/.bashrc
@@ -189,7 +189,7 @@ JVM + Lang + Libs
 > echo $PATH
 ```
 
-**Windows**  
+**Windows:**  
 [только через настройки системы](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html) :(  
 \+ Перезапустите консоль
 
@@ -199,16 +199,16 @@ JVM + Lang + Libs
 **HelloWorld.java**
 ```java
 public class HelloWorld {
-    public static void main(String[] args) {
+    public static void main(String[] args) { //entry point
         System.out.println("Hello, World!");
     }
 }
 ```
-1. public static void main(String[] args) is an entry point
-2. All executable code must inside classes
-3. public class name must match file name
-4. System.out.println("Hello, World!"); - is a standard way to print to console
-5. Every statement must end with semicolon
+1. ```public static void main(String[] args)``` is an entry point
+2. All executable code must inside **classes**
+3. public class name **must** match file name
+4. ```System.out.println("Hello, World!");``` - is a standard way to print to console
+5. Every statement must end with **semicolon**
 
 #HSLIDE 
 # compile and run
