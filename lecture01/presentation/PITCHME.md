@@ -47,40 +47,41 @@ https://atom.mail.ru/
 - тестировать
 - деплоить  
   
-##Ключевые технологии
+
+###Ключевые технологии
 **Java SE 8.0**  
 **Jersey** - web framework + **jetty** webserver  
 **Hibernate** - общение с базами данных  
-**WebSocket** - сетевой взаимодействие  
+**WebSocket** - сетевое взаимодействие  
 **Инструменты:** Git, Gradle, Docker
 
 #HSLIDE
-## References
+## Ссылки
 
-**Course page**  
+**Страничка курса**  
 [http://gojava.ru](http://gojava.ru) (currently redirects on github)  
 [https://github.com/rybalkinsd/atom](https://github.com/rybalkinsd/atom)
   
-**technoatom blog**  
+**Блог в техноатоме**  
 [https://atom.mail.ru/blog/view/99/](https://atom.mail.ru/blog/view/99/)
   
-**!Telegram chat!**  
+**!Чатик в Telegram!**  
 [https://t.me/joinchat/AAAAAEF63F9PvqE4JDzYdQ](https://t.me/joinchat/AAAAAEF63F9PvqE4JDzYdQ)  
 
 **JDK8**  
 [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
   
-**Official documentation**  
+**Официальная документация Java**  
 [http://docs.oracle.com/javase/8/docs/api/](http://docs.oracle.com/javase/8/docs/api/)
 
 #HSLIDE
-# Course plan
-1. Intro
-2. Java WEB
-3. Persisnence
-4. Client-server interaction
-5. Game mechanics
-6. Final project
+## План курса
+1. Intro - познаем основы языка, знакомимся с инструментарием
+2. Java WEB - учимся писать web-сервисы
+3. Persisnence - работаем с базами данных
+4. Client-server interaction - общаемся по сети
+5. Game mechanics - строим игру
+6. Final project - защищаем групповой проект
 
 #HSLIDE
 # Оценка
