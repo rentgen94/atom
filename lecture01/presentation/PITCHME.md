@@ -186,9 +186,8 @@ JVM + Lang + Libs
 > echo $PATH
 ```
 
-Windows (только через настройки системы) :(
-1) https://docs.oracle.com/javase/tutorial/essential/environment/paths.html
-2) Перезапустить консоль
+**Windows** [только через настройки системы](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html) :(
+\+ Перезапустите консоль
 
 
 #HSLIDE 
