@@ -179,7 +179,7 @@ path
 
 **Linux**
 edit
-```
+```bash
 > echo "PATH='/path/to/jdk8/bin:$PATH'" >> ~/.bashrc
 > echo "JAVA_HOME='/path/to/jdk8/'" >> ~/.bashrc
 > source ~/.bashrc
@@ -187,7 +187,7 @@ edit
 ```
 
 **macOS** (possibly sudo)
-```
+```bash
 > echo "PATH='/path/to/jdk8/bin:$PATH'" >> /etc/profile
 > echo "JAVA_HOME='/path/to/jdk8/'" >> /etc/profile
 > source /etc/profile
@@ -203,7 +203,7 @@ Windows (только через настройки системы) :(
 # Hello, World!
 HelloWorld.java
 (file name must match public class inside file)
-```
+```java
 public class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
@@ -216,12 +216,12 @@ public class HelloWorld {
 **javac** - java compiler
 
 Compile program
-```
+```bash
 > javac HelloWorld.java
 ```
 
 Run program
-```
+```bash
 > java HelloWorld
 Hello, World!
 ```
@@ -265,7 +265,7 @@ Hello, World!
 #HSLIDE
 #Expressions
 
-```
+```java
 int value = 0;
 
 int[] array = new int[10];
@@ -288,7 +288,7 @@ if (commonVarialbe > -42) { // ← начало блока
 #HSLIDE
 #if else
 As in c
-```
+```java
 if (18 == yourAge) {
     // у вас всё хорошо
 } else if (yourAge > 18
@@ -300,7 +300,7 @@ if (18 == yourAge) {
 ```
 #HSLIDE
 ## switch case
-```
+```java
 switch (countOfApple) {
     case 1: // у нас есть 1 яблоко
         break;
@@ -325,7 +325,7 @@ for (initialization; termination; increment)
 	statement
 ```
 **Examples:**
-```
+```java
 for (int i = 0; i < numberOfObjects; i++) {
     // iterates numberOfObjects times,
     // if numberOfObjects >= 0
@@ -345,7 +345,7 @@ IntStream.range(0, 10).forEach(System.out::println);
 
 #HSLIDE 
 # Methods
-```
+```java
 public int getCountOfApples(List<Integer> boxes, Integer[] numberOfBoxes) 
         throws Throwable {
 
@@ -379,8 +379,8 @@ build automation system
 like maven but more powerful  
 do not need installation
 just use
-```
-gradlew.bat
+```bash
+> gradlew.bat
 ```
 #HSLIDE
 # Gradle workflow
@@ -405,16 +405,16 @@ https://git-scm.com/
 #HSLIDE
 ## Fork repository and set upstream
 1. Форкните репозиторий - в вашем github появится копия репозитория
-```
-git clone https://github.com/YOUR_USERNAME/YOUR_FORK.git
+```bash
+> git clone https://github.com/YOUR_USERNAME/YOUR_FORK.git
 ```
 2. Настроим синхронизацию репозитория, чтобы вы работали со свежей версией кода
-```
+```bash
 > cd atom
 > git remote add upstream https://github.com/rybalkinsd/atom.git
 ```
 3. Проверим, что синхронизация включена (интересны 2 последние строки)
-```
+```bash
 > git remote -v
 origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
 origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
@@ -425,24 +425,24 @@ upstream https://github.com/rybalkinsd/atom.git (push)
 #HSLIDE
 ## Basic git
 Посмотреть текущую ветку
-```
+```bash
 > git branch
 master
 ```
 выбрать ветку lecture1
-```
+```bash
 > git checkout lecture1
 ```
 добавить файл к будущему коммиту
-```
+```bash
 > git add changed_file
 ```
 зафиксировать изменения в локальном репозитории
-```
+```bash
 > git commit -m 'Сообщение с пояснением коммита'
 ```
 послать изменения в удаленный (публичный) репозиторий
-```
+```bash
 > git push
 ```
 
@@ -451,7 +451,7 @@ master
 Continuous Integration Tool  
 [https://travis-ci.org/](https://travis-ci.org/)  
 When you push to repository - travis automatically runs on his server
-```
+```bash
 > ./gradlew assemble
 > ./gradlew check
 ```
