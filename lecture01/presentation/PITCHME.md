@@ -117,18 +117,18 @@ https://atom.mail.ru/
 6. Homework 1  
 
 #HSLIDE
-# Where to use Java?
+## Where to use Java?
 ### Java dominates areas:
 - Back-end for enterprise-scale solutions
-- Android (specific area)
-
+- Android (specific area)  
+  
 ### Where Java mostly does not work?
 - Low level high performance software
 - soft for specific hardware
 - scripting
 
 #HSLIDE
-# Why Java?
+## Why Java?
 ### About java
 - Java is **mature** (20+ years) => stable and conservative
 - Java has active community (in Russia too)
@@ -136,6 +136,7 @@ https://atom.mail.ru/
 - *Java is fast*  
 
 ### Technical side
+- Java is crossplatform - 'Write Once, Run Anywhere' (WORA)
 - Java is **object-oriented**, **class-based**
 - Java is compiled to **Byte Code** (not to machine codes), which is executed by **Java Virtual Machine (JVM)**
 - static strong safe typisation
@@ -172,9 +173,30 @@ JVM + Lang + Libs
 [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
 path
 
-2. set 'path' environment variable
+2. set **path** and **JAVA_HOME** environment variables
+**path** is list of places where system searches for binaries
+**JAVA_HOME** points to the root of JDK
 
-3. set 'JAVA_HOME' environment variable
+**Linux**
+edit
+```
+> echo "PATH='/path/to/jdk8/bin:$PATH'" >> ~/.bashrc
+> echo "JAVA_HOME='/path/to/jdk8/'" >> ~/.bashrc
+> source ~/.bashrc
+> echo $PATH
+```
+
+**macOS** (possibly sudo)
+```
+> echo "PATH='/path/to/jdk8/bin:$PATH'" >> /etc/profile
+> echo "JAVA_HOME='/path/to/jdk8/'" >> /etc/profile
+> source /etc/profile
+> echo $PATH
+```
+
+Windows (только через настройки системы) :(
+1) https://docs.oracle.com/javase/tutorial/essential/environment/paths.html
+2) Перезапустить консоль
 
 
 #HSLIDE 
@@ -200,7 +222,8 @@ Compile program
 
 Run program
 ```
-> java HelloWorld.class
+> java HelloWorld
+Hello, World!
 ```
 
 #HSLIDE 
@@ -211,11 +234,6 @@ Run program
 4. Gradle  
 5. Git  
 6. Homework 1  
-
-#HSLIDE 
-# Basic facts
-Syntax is c-style  
-All code is located within classes  
 
 #HSLIDE 
 # Basic types
@@ -397,7 +415,7 @@ git clone https://github.com/YOUR_USERNAME/YOUR_FORK.git
 ```
 3. Проверим, что синхронизация включена (интересны 2 последние строки)
 ```
-git remote -v
+> git remote -v
 origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
 origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
 upstream https://github.com/rybalkinsd/atom.git (fetch)

@@ -16,5 +16,4 @@ public class HelloWorldTest {
         assertThat(HelloWorld.getHelloWorld(), is(equalTo("Hello, World!")));
         assertThat(HelloWorld.getHelloWorld(), is(not(equalTo("Some strange string"))));
     }
-
 }
