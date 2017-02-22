@@ -393,16 +393,16 @@ Hello, World!
 
 #HSLIDE 
 # Git
-1. Install git
-https://git-scm.com/
+1. Install git  
+[https://git-scm.com/](https://git-scm.com/)
 
 #HSLIDE
 ## Fork repository and set upstream
-1. Форкните репозиторий - в вашем github появится копия репозитория
+1. После форка в вашем github появится копия репозитория
 ```bash
 > git clone https://github.com/YOUR_USERNAME/YOUR_FORK.git
 ```
-если вы его уже скачали, то 
+если вы его уже склонировали раньше, то обновите
 ```bash
 > git pull
 ```
@@ -425,7 +425,7 @@ upstream https://github.com/rybalkinsd/atom.git (push)
 https://www.atlassian.com/git/tutorials/using-branches
 
 #HSLIDE
-## git commands
+## git branch commands
 Посмотреть текущую ветку
 ```bash
 > git branch
@@ -439,6 +439,13 @@ master
 ```bash
 > git checkout lecture1
 ```
+Создать ветку lecture1
+```bash
+> git checkout -b new-branch
+```
+
+#HSLIDE
+## git commit commands
 посмотреть состояние рабочей копии
 ```bash
 > git status
