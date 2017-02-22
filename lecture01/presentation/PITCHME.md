@@ -22,33 +22,17 @@ https://atom.mail.ru/
 **Люблю смотреть, как другие пишут тесты**  
 
 #HSLIDE
-# Agenda
-1. Course structure  
-2. Language architecture  
-3. Basic syntax  
-4. Gradle  
-5. Git  
-6. Homework 1  
+# Цель курса
+Практическое введение в разработку серверных web приложений на Java на практике
+Практика - разработка сервера для мультиплеерной игры
 
-#HSLIDE  
-# 1. Course structure
-1. **[Course structure]**  
-2. Language architecture  
-3. Basic syntax  
-4. Gradle  
-5. Git  
-6. Homework 1  
-
-#HSLIDE
-#Цель курса
-Практическое введение в разработку серверных web приложений на Java  
 **Мы научимся:**
 - разрабатывать
 - тестировать
 - деплоить  
   
-
-###Ключевые технологии
+#HSLIDE
+# Ключевые технологии
 **Java SE 8.0**  
 **Jersey** - web framework + **jetty** webserver  
 **Hibernate** - общение с базами данных  
@@ -76,6 +60,7 @@ https://atom.mail.ru/
 
 #HSLIDE
 # План курса
+12 лекций/семинаров + 3 рубежных контроля + защита проектов
 1. **Intro** - познаем основы языка, знакомимся с инструментарием
 2. **Java WEB** - учимся писать web-сервисы
 3. **Persisnence** - работаем с базами данных
@@ -102,23 +87,35 @@ https://atom.mail.ru/
 #HSLIDE
 # Проект
 На протяжении всего курса мы будем разрабатывать **проект** - сервер для клона **bomberman**  
-
+[https://github.com/MattSkala/html5-bombergirl](https://github.com/MattSkala/html5-bombergirl)  
+  
+Проект имеет сервисную клиент-серверную архитектуру  
+  
 Мы подготовили для вас готовый клиент на javascript  
 Группы будут сформированы после первого рубежного контроля  
 
 **Защита проекта - обязательный критерий получения сертификата**
+
+#HSLIDE
+# Agenda
+1. Course structure  
+2. Language architecture  
+3. Basic syntax  
+4. Gradle  
+5. Git  
+6. Homework 1  
 
 #HSLIDE 
 # 2. Language architecture 
 1. Course structure  
 2. **[Language architecture]**  
 3. Basic syntax  
-4. Gradle  
+4. Gradle  	
 5. Git  
 6. Homework 1  
 
 #HSLIDE
-## Where to use Java?
+## Java domain
 ### Java dominates areas:
 - Back-end for enterprise-scale solutions
 - Android (specific area)  
@@ -140,89 +137,11 @@ https://atom.mail.ru/
 #HSLIDE
 ## Common Java facts
 - Java is **crossplatform** - 'Write Once, Run Anywhere' **(WORA)**
-- Java is **object-oriented**, **class-based**
 - Java is compiled to **Byte Code** (not to machine codes), which is executed by **Java Virtual Machine (JVM)**
-- static strong safe typisation
 - automatic memory management **(GC)**
+- Java is **object-oriented**, **class-based**
+- static strong safe typisation
 - concurrent
-
-#HSLIDE
-## JDK/JRE/JVM
-**JDK** - Java Development Kit  
-**JRE** - Java Runtime Environment  
-**JVM** - Java Virtual Machine 
-<img src="lecture01/presentation/assets/img/jdk-jre2.png" alt="me" style="width: 900px; float: left;"/>  
-
-#HSLIDE
-**JDK** - Java Development Kit  
-**JRE** - Java Runtime Environment  
-**JVM** - Java Virtual Machine   
-<img src="lecture01/presentation/assets/img/jdk-jre.png" alt="me" style="width: 750px; float: left;"/>  
-  
-**JDK** =  
-JRE + Tools  
-  
-**JRE** =  
-JVM + Lang + Libs
-
-#HSLIDE 
-## From source to running program
-<img src="lecture01/presentation/assets/img/codeflow.png" alt="me" style="width: 750px; float: left;"/>  
-
-#HSLIDE 
-## Basic setup
-1. Download [**JDK8**](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
-
-2. set **path** and **JAVA_HOME** environment variables  
-**Linux:**
-```bash
-> echo "PATH='/path/to/jdk8/bin:$PATH'" >> ~/.bashrc
-> echo "JAVA_HOME='/path/to/jdk8/'" >> ~/.bashrc
-> source ~/.bashrc
-> echo $PATH
-```
-**macOS:** (possibly sudo)
-```bash
-> echo "PATH='/path/to/jdk8/bin:$PATH'" >> /etc/profile
-> echo "JAVA_HOME='/path/to/jdk8/'" >> /etc/profile
-> source /etc/profile
-> echo $PATH
-```
-
-**Windows:**  
-[только через настройки системы](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html) :( \+ Перезапустите консоль
-
-
-#HSLIDE 
-# Hello, World!
-**HelloWorld.java**
-```java
-public class HelloWorld {
-    public static void main(String[] args) { //entry point
-        System.out.println("Hello, World!");
-    }
-}
-```
-1. ```public static void main(String[] args)``` is an entry point
-2. All executable code must inside **classes**
-3. public class name **must** match file name
-4. ```System.out.println("Hello, World!");``` - is a standard way to print to console
-5. Every statement must end with **;**
-
-#HSLIDE 
-# compile and run
-**javac** - java compiler
-
-Compile program
-```bash
-> javac HelloWorld.java
-```
-
-Run program
-```bash
-> java HelloWorld
-Hello, World!
-```
 
 #HSLIDE 
 # 3. Basic syntax 
@@ -235,29 +154,29 @@ Hello, World!
 
 #HSLIDE 
 # Basic types
-| Type          | Size          | Range  			|
+| Type          | Size          | Range             |
 | ------------- |:-------------:| -----------------:|
-| boolean       | undefined 	| true/false 		|
-| byte        	| 1 byte      	| -128-127 			|
-| char 			| 2 bytes      	| \u0000-\uffff 	|
-| short 		| 2 bytes      	| -32768 - 32767	|
-| int 			| 4 bytes      	| -2^31 - (2^31)-1	|
-| long 			| 8 bytes     	| -2^63 - (2^63)-1	|
-| float 		| 4 bytes      	| IEEE 754			|
-| double 		| 8 bytes      	| IEEE 754 			|
-| **reference** | system bitness|					|
+| boolean       | undefined     | true/false        |
+| byte          | 1 byte        | -128-127          |
+| char          | 2 bytes       | \u0000-\uffff     |
+| short         | 2 bytes       | -32768 - 32767    |
+| int           | 4 bytes       | -2^31 - (2^31)-1  |
+| long          | 8 bytes       | -2^63 - (2^63)-1  |
+| float         | 4 bytes       | IEEE 754          |
+| double        | 8 bytes       | IEEE 754          |
+| **reference** | system bitness|                   |
 
 #HSLIDE 
 # Operators
-|Operator type 	|Operator 			    	|
+|Operator type  |Operator                   |
 |---------------|---------------------------|
-|Assignment 	| =, +=, *= …^=				|
-|Arithmetical 	| +, -, *, /, %				|
-|Relational 	| <, >, <=, >=, ==, !=		|
-|Logical 		| &&, &#124;&#124;			|
-|Bitwise 		| &, &#124;, ^, >>, <<, >>>	|
-|Unary 			| ++, --, +, -, !			|
-|Relational2 	| instanceof				|
+|Assignment     | =, +=, *= …^=             |
+|Arithmetical   | +, -, *, /, %             |
+|Relational     | <, >, <=, >=, ==, !=      |
+|Logical        | &&, &#124;&#124;          |
+|Bitwise        | &, &#124;, ^, >>, <<, >>> |
+|Unary          | ++, --, +, -, !           |
+|Relational2    | instanceof                |
 
 
 #HSLIDE
@@ -272,7 +191,7 @@ array[0] = 100;
 System.out.println("Hello, world!");
 
 if (value1 == value2)
-	System.out.println("value1 == value2");
+    System.out.println("value1 == value2");
 
 int commonVariable = 0;
 if (commonVarialbe > -42) { // ← начало блока
@@ -320,7 +239,7 @@ while (expression) statement
 do { statement } while (expression)
 
 for (initialization; termination; increment)
-	statement
+    statement
 ```
 **Examples:**
 ```java
@@ -354,37 +273,114 @@ public int getCountOfApples(List<Integer> boxes, Integer[] numberOfBoxes)
     return sumOfApples;
 }
 ```
-Access modifier ```		public```  
-Return type ```			int```  
-Method name ```			getCountOfApples```  
-Parameter list ```		( … )```  
-Exception list ```		throws Throwable```  
-Method body ```			{ … }```  
+**Method signature** – method name + argument list
+
+Access modifier **public**  
+Return type **int**  
+Method name **getCountOfApples**  
+Parameter list **( … )**  
+Exception list **throws Throwable**  
+Method body **{ … }**  
+
+#HSLIDE
+## JDK/JRE/JVM
+**JDK** - Java Development Kit  
+**JRE** - Java Runtime Environment  
+**JVM** - Java Virtual Machine 
+<img src="lecture01/presentation/assets/img/jdk-jre2.png" alt="me" style="width: 900px; float: left;"/>  
+
+#HSLIDE
+**JDK** - Java Development Kit  
+**JRE** - Java Runtime Environment  
+**JVM** - Java Virtual Machine   
+<img src="lecture01/presentation/assets/img/jdk-jre.png" alt="me" style="width: 750px; float: left;"/>  
+  
+**JDK** =  
+JRE + Tools  
+  
+**JRE** =  
+JVM + Lang + Libs
 
 #HSLIDE 
-# 4. Gradle 
-1. Course structure  
-2. Language architecture  
-3. Basic syntax  
-4. **[Gradle]**  
-5. Git  
-6. Homework 1  
+## From source to running program
+<img src="lecture01/presentation/assets/img/codeflow.png" alt="me" style="width: 750px; float: left;"/>  
 
-#HSLIDE
-# Gradle
-https://gradle.org/
-build automation system  
-like maven but more powerful  
-do not need installation
-just use
+#HSLIDE 
+## Basic setup *nix
+1. Download [**JDK8**](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
+
+2. set **path** and **JAVA_HOME** environment variables  
+**Linux:**
 ```bash
-> gradlew.bat
+> echo "PATH='/path/to/jdk8/bin:$PATH'" >> ~/.bashrc
+> echo "JAVA_HOME='/path/to/jdk8/'" >> ~/.bashrc
+> source ~/.bashrc
+> echo $PATH
+...
+> java -version
+...
 ```
-#HSLIDE
-# Gradle workflow
-https://guides.gradle.org/creating-java-applications/
-gradle assemble
-gradle check
+**macOS:** (possibly sudo)
+```bash
+> echo "PATH='/path/to/jdk8/bin:$PATH'" >> /etc/profile
+> echo "JAVA_HOME='/path/to/jdk8/'" >> /etc/profile
+> source /etc/profile
+> echo $PATH
+...
+> java -version
+...
+```
+
+#HSLIDE 
+## Basic setup Windows
+1. Download [**JDK8**](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
+
+2. [только через настройки системы](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html) :(  
+Изменения подхватятся терминалом только после перезапуска терминала
+```bat
+> echo %PATH%
+...
+> java -version
+...
+```
+
+#HSLIDE 
+## JDK contents
+```
+> ls jdk8/bin/
+```
+java, javac, javap, jar
+
+#HSLIDE 
+# Hello, World!
+**HelloWorld.java**
+```java
+public class HelloWorld {
+    public static void main(String[] args) { //entry point
+        System.out.println("Hello, World!");
+    }
+}
+```
+1. ```public static void main(String[] args)``` is an entry point
+2. All executable code must be inside **classes**
+3. public class name **must** match file name
+4. ```System.out.println("Hello, World!");``` - is a standard way to print to console
+5. Every statement must end with **;**
+
+#HSLIDE 
+# compile and run
+**javac** - java compiler
+
+Compile program
+```bash
+> javac HelloWorld.java
+```
+
+Run program
+```bash
+> java HelloWorld
+Hello, World!
+```
 
 #HSLIDE 
 # 5. Git 
@@ -406,6 +402,10 @@ https://git-scm.com/
 ```bash
 > git clone https://github.com/YOUR_USERNAME/YOUR_FORK.git
 ```
+если вы его уже скачали, то 
+```bash
+> git pull
+```
 2. Настроим синхронизацию репозитория, чтобы вы работали со свежей версией кода
 ```bash
 > cd atom
@@ -421,17 +421,30 @@ upstream https://github.com/rybalkinsd/atom.git (push)
 ```
 
 #HSLIDE
-## Basic git
+## Git branches
+https://www.atlassian.com/git/tutorials/using-branches
+
+#HSLIDE
+## git commands
 Посмотреть текущую ветку
 ```bash
 > git branch
 master
 ```
+взять последние сведени о ветках из удаленного репозитория
+```bash
+> git fetch
+```
 выбрать ветку lecture1
 ```bash
 > git checkout lecture1
 ```
-добавить файл к будущему коммиту
+посмотреть состояние рабочей копии
+```bash
+> git status
+...
+```
+добавить файл к будущему коммиту (stage)
 ```bash
 > git add changed_file
 ```
@@ -443,21 +456,68 @@ master
 ```bash
 > git push
 ```
+взять новые изменения из удаленного репозитория
+```bash
+> git pull
+```
+
+# HSLIDE
+## Github workflow
+1. **Fork** project
+2. **clone** forked project
+```bash
+> git clone https://github.com/MY-GITHUB-NAME/atom
+```
+3. **checkout** branch which you want to contribute
+```bash
+> git fetch
+> git checkout homework-branch
+```
+4. make changes and **push** them to **your fork**
+```bash
+> git pull
+> git add MyFixedFile1.java MyFixedFile2.java
+> git commit -m 'Fixed all bugs and added new'
+> git push
+```
+5. make **pull-request**
+
+
+#HSLIDE 
+# 4. Gradle 
+1. Course structure  
+2. Language architecture  
+3. Basic syntax  
+4. **[Gradle]**  
+5. Git  
+6. Homework 1  
+
+#HSLIDE
+# Gradle
+https://gradle.org/
+**Gradle** - build automation system  
+Like **maven** but more powerful  
+do not need installation, just use:
+```bash
+> gradlew.bat
+```
+https://gradle.org/install
+
+#HSLIDE
+# Gradle workflow
+https://guides.gradle.org/creating-java-applications/
+gradle assemble
+gradle check
+TODO
 
 #HSLIDE
 # Travis  
 Continuous Integration Tool  
 [https://travis-ci.org/](https://travis-ci.org/)  
 When you push to repository - travis automatically runs on his server
-```bash
-> ./gradlew assemble
-> ./gradlew check
-```
-So it does for all branches and pull requests
+gradle build  
+It tracks all branches and pull requests
 [https://travis-ci.org/rybalkinsd/atom/pull_requests](https://travis-ci.org/rybalkinsd/atom/pull_requests)
-
-#HSLIDE
-Branch
 
 #HSLIDE 
 # 6. Homework 1 
@@ -470,7 +530,10 @@ Branch
 
 #HSLIDE
 # Homework 1
-4 balls
+1. Fix tests in branch homework1
+2. Make pull request to course repoitory
+[https://github.com/rybalkinsd/atom](https://github.com/rybalkinsd/atom)
+**5 balls**
 
 #HSLIDE
 ## Оставьте обратную связь в анкете для обратной связи. Это важно!
